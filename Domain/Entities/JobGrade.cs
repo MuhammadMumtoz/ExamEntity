@@ -1,5 +1,7 @@
 namespace Domain.Entities;
 using Domain.Entities;
+
+// [Keyless]
 public class JobGrade{
     public string GradeLevel { get; set; }
     public int LowestSalary { get; set; }

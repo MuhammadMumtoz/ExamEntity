@@ -11,7 +11,7 @@ public class GetEmployeeDto
     public DateTime HireDate { get; set; }
     public string JobTitle { get; set; }
     public int CommissionPct { get; set; }
-    public int ManagerId { get; set; }
+    public int? ManagerId { get; set; }
     public string DepartmentName { get; set; }
     public IFormFile File { get; set; }
 

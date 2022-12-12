@@ -31,7 +31,7 @@ public class DepartmentService
         var newDepartment = new Department()
         {
             DepartmentName = department.DepartmentName,
-            ManagerId = department.ManagerId,
+           // ManagerId = department.ManagerId,
             LocationId = department.LocationId
         };
         _context.Departments.Add(newDepartment);
@@ -44,7 +44,7 @@ public class DepartmentService
     {
         var find = await _context.Departments.FindAsync(department.DepartmentId);
         find.DepartmentName = department.DepartmentName;
-        find.ManagerId = department.ManagerId;
+    //    find.ManagerId = department.ManagerId;
         find.LocationId = department.LocationId;
         var updated = await _context.SaveChangesAsync();
         return new Response<AddDepartmentDto>(department);
